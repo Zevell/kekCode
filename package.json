@@ -1,0 +1,21 @@
+{
+  "name": "kekcode",
+  "version": "1.0.0",
+  "description": "Translator for the kek language",
+  "main": "kekcode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kek",
+    "translator"
+  ],
+  "author": "Zeval#7599",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "image-downloader": "^3.5.0",
+    "morse-code-converter": "^1.0.2",
+    "node-opus": "^0.3.2"
+  }
+}
