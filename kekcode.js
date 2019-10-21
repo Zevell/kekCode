@@ -6,11 +6,6 @@ const morse = require("morse-code-converter");
 const download = require('image-downloader');
 const kekid = "220637968463822848"
 const fs = require('fs');
-let token;
-fs.readFile(filename, 'utf8', function (err, data) {
-    if (err) throw err;
-    token = data;
-});
 
 
 replaceAll = function (string, search, replacement) {
@@ -123,4 +118,8 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-bot.login(token);
+
+fs.readFile("./token.txt", 'utf8', function (err, data) {
+    if (err) throw err;
+    bot.login(data);
+});
