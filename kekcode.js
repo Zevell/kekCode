@@ -5,6 +5,13 @@ const bot = new Discord.Client();
 const morse = require("morse-code-converter");
 const download = require('image-downloader');
 const kekid = "220637968463822848"
+const fs = require('fs');
+let token;
+fs.readFile(filename, 'utf8', function (err, data) {
+    if (err) throw err;
+    token = data;
+});
+
 
 replaceAll = function (string, search, replacement) {
     return string.replace(new RegExp(search, 'g'), replacement);
@@ -116,4 +123,4 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-bot.login('NjMyNTQ2MzQyMTg2NTE2NDkw.XaHCBA.y0fY6zvdcsd3uFRF6fdmn6468F0');
+bot.login(token);
