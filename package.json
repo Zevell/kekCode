@@ -13,9 +13,11 @@
   "author": "Zeval#7599",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^11.5.1",
     "image-downloader": "^3.5.0",
     "morse-code-converter": "^1.0.2",
-    "node-opus": "^0.3.2"
+    "node-opus": "^0.3.2",
+    "nodemon": "^2.0.6"
   }
 }
