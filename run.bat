@@ -1,4 +1,4 @@
 @echo off
 title Kek translator
-nodemon kekcode.js
+node kekcode.js
 pause
